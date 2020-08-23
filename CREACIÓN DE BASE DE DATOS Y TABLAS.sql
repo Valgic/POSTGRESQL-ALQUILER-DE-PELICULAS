@@ -41,7 +41,7 @@ GENERO_PELICULA              varchar(20)          null,
 IDIOMA_PELICULA              varchar(20)          null,
    PRECIO_PELICULA   numeric(5,2)         null,
    FECHA_ULTIMOALQUILER   date             null,
-   constraint PK_VEHICULO primary key (ID_PELICULA)
+   constraint PK_PELICULA primary key (ID_PELICULA)
 )
 
 /*==============================================================*/
@@ -53,7 +53,7 @@ create table ALQUILER_PELICULA (
    ID_ALQUILER_PELICULA           int                  not null,
    FECHAENTREGA_PELICULA  date     null,
    FECHASALIDA_PELICULA  date      null,
-   constraint PK_ALQUILERVEHICULO primary key (ID_PELICULA, ID_CLIENTE,
+   constraint PK_ALQUILER_PELICULA primary key (ID_PELICULA, ID_CLIENTE,
  ID_ALQUILER_PELICULA)
 )
 
